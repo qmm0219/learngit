@@ -1,0 +1,70 @@
+<div class="classify-wrap">
+	<div class="titleDiv">全部分类</div>
+	<section>
+		<ul class="classes">
+			<li style="background:#fff;"><a href="javascript:void(0)">推荐分类</a></li>
+			<li><a href="javascript:void(0)">中西药品</a></li>
+			<li><a href="javascript:void(0)">成人药品</a></li>
+			<li><a href="javascript:void(0)">家庭药箱</a></li>
+			<li><a href="javascript:void(0)">健康体检</a></li>
+			<li><a href="javascript:void(0)">医药器械</a></li>
+			<li><a href="javascript:void(0)">营养保健</a></li>
+			<li><a href="javascript:void(0)">中药饮片</a></li>
+			<li><a href="javascript:void(0)">隐形眼镜</a></li>
+			<li><a href="javascript:void(0)">家庭电器</a></li>
+		</ul>
+		<div class="content-wrap">
+			<div class="content" style="display: block;">
+				<p class="titp">热门分类</p>
+				<ul class="ulhot">
+					<li ng-repeat="hot in class1">
+						<p class="imgs"><img ng-src="{{hot.WebChannelImg}}"></p>
+						<p class="names">{{hot.WebChannelName}}</p>	
+					</li>
+				</ul>
+			</div>
+			
+			<div class="content" style="display: none;">
+				<p class="titp">中西药品</p>
+				<ul class="ulhot">
+					<li ng-repeat="zx in class2">
+						<p class="imgs"><img ng-src="{{zx.WebChannelImg}}"></p>
+						<p class="names">{{zx.WebChannelName}}</p>	
+					</li>
+				</ul>
+			</div>
+
+
+			<div class="content">
+				<p class="titp">成人药品</p>
+				<ul class="ulhot">
+					<li ng-repeat="cr in class3">
+						<p class="imgs"><img ng-src="{{cr.WebChannelImg}}"></p>
+						<p class="names">{{cr.WebChannelName}}</p>	
+					</li>
+				</ul>
+			</div>
+
+			<div class="content" style="display: none;">
+				<p class="titp">中西药品</p>
+				<ul class="ulhot">
+					<li ng-repeat="zx in class2">
+						<p class="imgs"><img ng-src="{{zx.WebChannelImg}}"></p>
+						<p class="names">{{zx.WebChannelName}}</p>	
+					</li>
+				</ul>
+			</div>
+
+
+			<div class="content">
+				<p class="titp">健康体检</p>
+				<ul class="ulhot">
+					<li ng-repeat="hot in class1">
+						<p class="imgs"><img ng-src="{{hot.WebChannelImg}}"></p>
+						<p class="names">{{hot.WebChannelName}}</p>	
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+</div>

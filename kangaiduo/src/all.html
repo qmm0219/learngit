@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+	<title>康爱多网上药店-全部分类</title>
+	<link rel="stylesheet" type="text/css" href="lib/reset.css">
+	<link rel="stylesheet" type="text/css" href="styles/all.css">
+</head>
+<body ng-app="allApp" ng-controller="allCtrl" class="ng-cloak">
+	<div class="all-wrap">
+		<header>
+			<div class="logo">
+				<a href="http://localhost:3000/#/"><img src="images/logo2.png"></a>
+			</div>
+			<div class="title">
+				<p>全部分类</p>
+			</div>
+			<div class="gwc">
+				<a href="http://localhost:3000/#/shopping"><img src="images/gwuche.jpg"></a>
+				<span>{{num}}</span>
+			</div>
+		</header>
+		<div class="search-w">
+			<div class="search-l">
+				<input type="text" class="txt" placeholder="输入药品名称" ng-model="inp.drugName">
+				<span ng-click="qkFn()"><img src="images/sear_clos.png"></span>	
+			</div>
+			<div class="search-r">搜药</div>
+		</div>
+		<section ng-repeat="item in data" ng-click="toggle($index)">
+			<div class="classify">
+				<div class="classify-l">
+					<p class="titP" ng-class="{'changeColor':showArr[$index]}">{{item.CategoryName}}</p>
+					<p class="admin">{{item.Description}}</p>
+				</div>
+				<div class="classify-r" ng-class="{'classify-img':showArr[$index]}">
+				</div>
+			</div>
+			<ul class="classify-content" ng-show='showArr[$index]'>
+				<li  ng-repeat="classify in item.Childs"><a href="javascript:void(0)">{{classify.CategoryName}}</a></li>
+			</ul>				
+		</section>
+		<footer>
+			<div class="loginDiv">
+				<a href="http://m.360kad.com/Login/">登录</a>
+				<a href="http://m.360kad.com/register/index?returnUrl=http://m.360kad.com/User/Index">注册</a>
+				<span class="right">
+					<img src="images/shouye.png" height="15" width="15">
+					<a href="http://localhost:3000/#/">首页</a>	
+				</span>	
+			</div>
+			<ul class="foot">
+				<li><a href="">用药问答</a></li>
+				<li><a href="">心愿单</a></li>
+				<li><a href="">帮助</a></li>
+				<li><a href="">反馈</a></li>
+				<li style="border:none;"><a href="">关于康爱多</a></li>
+			</ul> 
+			<div class="phone">400-8808-488</div>
+			<div class="weixin">关注康爱多微信立送200元</div>
+			<div class="download"><a href="">下载Android客户端</a></div>
+			<div class="copy">
+				<p class="xx"><span class="yuan">正</span>正品保障<span class="yuan">隐</span>隐私配送<span class="yuan">专</span>专业药师<span class="yuan">付</span>货到付款</p>
+				<p class="cop">copyright&copy;2010-2016康爱多网上药店&nbsp;版权所有</p>
+			</div>
+		</footer>
+	</div>
+</body>
+<script type="text/javascript" src="lib/jquery.js"></script>
+<script type="text/javascript" src="lib/angular.min.js"></script>
+<script type="text/javascript" src="scripts/all.js"></script>
+</html>

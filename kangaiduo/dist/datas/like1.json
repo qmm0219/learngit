@@ -1,0 +1,89 @@
+{
+    "Code": "0",
+    "Message": "成功",
+    "Data": [
+        {
+            "WareSkuCode": "2113",
+            "WareName": "奇正 消痛贴膏 1.2g:2.5ml*5贴",
+            "Pic180": "http://image.360kad.com/group1/M00/0C/3D/CgAgEVYc_0WAcn28AAAgAJ5osis89.jpeg",
+            "Pic800": "http://image.360kad.com/group1/M00/81/75/CgAgEFh3exyAS7vXAAHM7Mo0cyw343.jpg",
+            "SalePrice": 80,
+            "MarketPrice": 103,
+            "Advertisement": "【本月钜惠】咨询药师有惊喜！一般用户搭配橄榄氨糖胶囊，增加骨密度，缓解关节疼痛，增强关节灵活性。",
+            "IsRx": 0
+        },
+        {
+            "WareSkuCode": "632",
+            "WareName": "京都念慈菴蜜炼川贝枇杷膏 300ml",
+            "Pic180": "http://image.360kad.com/group1/M00/70/3C/CgAgEFgtDRqASBQ7AAMdMtV1kuc940.jpg_180x180.jpg",
+            "Pic800": "http://image.360kad.com/group1/M00/89/49/CgAgEFilr06AGexjAAMdMtV1kuc057.jpg",
+            "SalePrice": 42,
+            "MarketPrice": 64,
+            "Advertisement": "【3月暖春行动】部分地区已暂停发货，详询客服。润肺化痰、止咳平喘。本品适用于伤风咳嗽、痰稠、痰多气喘、咽喉干痒及声音嘶哑。少儿不宜食用。",
+            "IsRx": 0
+        },
+        {
+            "WareSkuCode": "261",
+            "WareName": "安药 抗病毒口服液 10ml*10支",
+            "Pic180": "http://image.360kad.com/group1/M00/34/F0/CgAgEVdWbrOABsEbAAHFHM0mS2w264.jpg_180x180.jpg",
+            "Pic800": "http://image.360kad.com/group1/M00/34/F0/CgAgEVdWbrOABsEbAAHFHM0mS2w264.jpg",
+            "SalePrice": 19.8,
+            "MarketPrice": 25,
+            "Advertisement": "【3月暖春行动】抗病毒口服液原价19.8，现特惠价11.9元。本品清热祛湿，凉血解毒。用于风热感冒，流感。",
+            "IsRx": 0
+        },
+        {
+            "WareSkuCode": "81477",
+            "WareName": "康美 枸杞子 150g/瓶",
+            "Pic180": "http://image.360kad.com/group1/M00/72/34/CgAgEFg2YJiANdKXAAGcXqlqqIc502.jpg_180x180.jpg",
+            "Pic800": "http://image.360kad.com/group1/M00/72/34/CgAgEFg2YJiANdKXAAGcXqlqqIc502.jpg",
+            "SalePrice": 59,
+            "MarketPrice": 74,
+            "Advertisement": "【本月钜惠】限时特惠，下单即59元，抢完即止！枸杞滋补肝肾，益精明目，用于虚劳精亏，腰膝酸痛，眩晕耳鸣，阳痿遗精，内热消渴，目昏不明。",
+            "IsRx": 0
+        },
+        {
+            "WareSkuCode": "73503",
+            "WareName": "鼻朗 生理性海水鼻腔喷雾器 50ml",
+            "Pic180": "http://image.360kad.com/group1/M00/08/3B/CgAgEVWKR6eADmu9AAAlUlnYUk4318.jpg",
+            "Pic800": "http://image.360kad.com/group1/M00/89/4F/CgAgEViltIyAIXnVAAGcXd3td1A767.jpg",
+            "SalePrice": 59,
+            "MarketPrice": 69,
+            "Advertisement": "【暖春3月】大牌直降，特惠55元起/盒！3盒起送价值39元鱼腥草饮片1盒，2盒赠送纸巾1包！温馨提醒：适用于日常鼻腔护理清洗。",
+            "IsRx": 0
+        },
+        {
+            "WareSkuCode": "726",
+            "WareName": "同济堂 虫草清肺胶囊 0.3g*12粒*2板",
+            "Pic180": "http://image.360kad.com/group1/M00/20/15/CgAgEFbWYx6Ac0ETAAHHUkShjjE540.jpg_180x180.jpg",
+            "Pic800": "http://image.360kad.com/group1/M00/89/42/CgAgEFilpSKAfThNAAHHUkShjjE770.jpg",
+            "SalePrice": 48.5,
+            "MarketPrice": 68,
+            "Advertisement": "【约惠春天】让利回馈，咨询药师有惊喜！中药润肺补气，清肺化痰，止咳平喘，慢性支气管炎，详情可咨询药师",
+            "IsRx": 0
+        },
+        {
+            "WareSkuCode": "76512",
+            "WareName": "慢严舒柠 清喉利咽颗粒 5g*18袋",
+            "Pic180": "http://image.360kad.com/group1/M00/41/35/CgAgEFeawWiAJn-sAAHIgqU-M98093.jpg_180x180.jpg",
+            "Pic800": "http://image.360kad.com/group1/M00/8C/F1/CgAgEVi1S36AbKh6AAHIgqU-M98831.jpg",
+            "SalePrice": 46.8,
+            "MarketPrice": 55,
+            "Advertisement": "【3月暖春行动】40元起超低价，满送家用大礼包（创可贴+棉签+纸巾+风油精）；十三味中药组方，清热解毒，止痛止咳，直击上火根源，常用保护声带。",
+            "IsRx": 0
+        },
+        {
+            "WareSkuCode": "70162",
+            "WareName": "都乐 金嗓子喉片 2g*6片*2板",
+            "Pic180": "http://image.360kad.com/group1/M00/10/88/CgAgEVaA0WSAT2ASAAAgAIGZPCY96.jpeg",
+            "Pic800": "http://image.360kad.com/group1/M00/10/88/CgAgEFaA0WSAbB3CAAKTsLE6YIg31.jpeg",
+            "SalePrice": 15,
+            "MarketPrice": 18,
+            "Advertisement": "【3月暖春行动】低至15元。疏风清热，解毒利咽，芳香辟秽。适用于改善急性咽炎所致的咽喉肿痛，干燥灼热，声音嘶哑。",
+            "IsRx": 0
+        }
+    ],
+    "TotalCount": 76,
+    "TotalPage": 10,
+    "PageIndex": 2
+}

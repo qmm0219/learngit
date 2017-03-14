@@ -1,0 +1,46 @@
+<div class="shop-wrap">
+	<div class="titleDiv">
+		<p class="gwc">购物车</p>
+		<p class="right"><a href="">编辑</a></p>
+	</div>
+	<div class="buy-wrap">
+		<p class="titlep">
+			<span class="kad">康爱多</span>
+		</p>
+		<ul class="buy" ng-show="dataArr.length">
+			<li ng-repeat="item in dataArr">
+				<div class="left">
+					<span ng-click="status($index)" ng-class="{'bgc':arr[$index]}"></span>
+				</div>
+				<div class="icon">
+					<img ng-src="{{item.picUrl}}">
+				</div>
+				<div class="right">
+					<p class="names">{{item.name}}</p>
+					<p class="price">{{item.price | currency:'￥'}}</p>
+					<p class="num">
+						<button class="jian" ng-click="lessenFn(item.id)">-</button>
+						<input type="text" class="txt" value="{{item.num}}" ng-model="item.num">
+						<button class="jia" ng-click="addFn(item.id)">+</button>
+						<button class="removeBtn" ng-click="removeFn(item.id)">删除</button>
+					</p>
+				</div>
+			</li>	
+		</ul>
+		<div class="hide" ng-hide="dataArr.length">
+			<p class="p1">您的购物车是空的！</p>
+			<p><a href="http://localhost:3000/#/">赶快去逛逛吧！</a></p>
+			
+		</div>
+	</div>
+	<div class="zong">
+		<div class="leftp">
+			<span ng-click="totalFn()" ng-class="{'imgs':btn}"></span>
+		</div>
+		<div class="center">
+			<p class="total">总计：<span>{{zPrice | currency:'￥'}}</span></p>
+			<p class="save">该订单已包邮</p>
+		</div>
+		<div class="btn">去结算({{allNum}})</div>
+	</div>
+</div>

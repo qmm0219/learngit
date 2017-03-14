@@ -1,0 +1,1 @@
+var app=angular.module("allApp",[]);app.controller("allCtrl",["$scope","$http",function(a,r){r.get("datas/all.json").then(function(r){a.data=r.data.RspData.data}),a.num=localStorage.length,a.showArr=[],a.toggle=function(r){a.showArr[r]?a.showArr[r]=!1:(a.showArr=[],a.showArr[r]=!0)},a.inp={drugName:""},a.qkFn=function(){a.inp.drugName=""}}]);

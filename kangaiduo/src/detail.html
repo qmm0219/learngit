@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+	<link rel="stylesheet" type="text/css" href="lib/reset.css">
+	<link rel="stylesheet" type="text/css" href="styles/detail.css">
+</head>
+<body ng-app="myApp" ng-controller="myCtrl">
+	<div class="detail-wrap">
+		<header>
+			<div class="return"><a href="http://localhost:3000/#"><img ng-src="images/jiantou.png" alt=""></a></div>
+			<div class="title">商品详情</div>
+		</header>
+		<div class="main">
+			<div class="picture">
+				<img ng-src="{{like.Pic800}}">
+			</div>
+			<ul class="det">
+				<li>{{like.WareName}}</li>
+				<li>
+					<p class="sale">{{like.SalePrice | currency:'￥'}}</p>
+					<p class="marke"><s>{{like.MarketPrice | currency:'￥'}}</s></p>
+				</li>
+			</ul>
+			
+		</div>
+		<div class="prompt">
+			<div class="content">成功加入购物车</div>
+			
+		</div>
+		<footer>
+			<div class="gwc" ng-click="cart()"><img src="images/gwuche.jpg"><span>{{num}}</span></div>
+			<div class="addBtn" ng-click="add($event)">加入购物车</div>
+		</footer>
+	</div>
+	
+</body>
+<script type="text/javascript" src="lib/angular.min.js"></script>
+<script type="text/javascript" src="lib/angular-route.min.js"></script>	
+<script type="text/javascript" src='lib/jquery.js'></script>
+<script type="text/javascript">
+	var app = angular.module('myApp',['ngRoute']);
+	app.controller("myCtrl",['$scope','$http',function($scope,$http){
+		// console.log(window.location.search);
+		var param = findParam(window.location.search);
+		$http.get('http://127.0.0.1/kadgwc/detail.php?comId=' + param).then(function(like){
+			$scope.like = like.data;
+			// console.log($scope.like);
+		});
+		$scope.num = localStorage.length;
+		// 点击加入购物车将物品名称存入localStorage中
+		$scope.add = function($event){
+			// $event.stopPropagation();
+			// 如果购物车中已经有了此商品就让它的num值++;
+			if(localStorage[$scope.like.WareSkuCode]){
+				var like = JSON.parse(localStorage[$scope.like.WareSkuCode]);
+				++like.num;
+				localStorage[$scope.like.WareSkuCode] = JSON.stringify(like);
+				// console.log(localStorage[$scope.like.WareSkuCode]);
+
+			}else{
+				var obj = {
+					name:$scope.like.WareName,
+					picUrl:$scope.like.Pic800,
+					price:$scope.like.SalePrice,
+					num:1,
+					id:$scope.like.WareSkuCode
+				}
+
+				localStorage[$scope.like.WareSkuCode] = JSON.stringify(obj);
+			}
+			$('.content').fadeIn(2000,function(){
+				$('.content').hide();
+			})
+			$scope.num = localStorage.length;
+
+		};
+		// 点击购物车跳转到购物车页面
+		$scope.cart = function(){
+			window.location.href = 'http://localhost:3000/#/shopping';
+		}
+
+	
+
+	}]);
+
+
+	function findParam(a){
+		var params = a.split('=')[1];
+		return params;
+	}
+</script>
+</html>

@@ -1,0 +1,206 @@
+.shop-wrap{
+	width: 100%;
+	font-family:"微软雅黑";
+	/*position: relative;*/
+	.titleDiv{
+		width: 100%;
+		padding:5% 0;
+		background:#f8f8f8;
+		display:flex;
+		border-bottom:1px solid #ccc;
+		.gwc{
+			width: 90%;
+			text-align: center;
+			font-size: 16px;
+	
+		}
+		.right{
+			width: 10%;
+			margin-right:3%;
+			a{
+				font-size: 14px;
+				color:#222;
+			}
+		}
+	}
+	.buy-wrap{
+		width: 90%;
+		margin:auto;
+		.titlep{
+			position: relative;
+			width: 100%;
+			font-size: 16px;
+			height:35px;
+			padding:2% 0;
+			border-bottom: 1px solid #ccc;
+			.imgs{
+				position: absolute;
+				left:0px;
+				top:5px;
+				display: inline-block;
+				width:9%;
+				img{
+					width: 100%;
+				}
+			}
+			#sel{
+				display: inline-block;
+				width: 15px;
+				height: 15px;
+				border-radius: 50%;
+				border:1px solid #ccc;
+				background:url('../images/round.png');
+			}
+			.kad{
+				display: inline-block;
+				position: absolute;
+				width: 80%;
+				left:12%;
+				top:9px;
+			}
+		}
+		.buy{
+			width: 100%;
+			margin-bottom: 100px;
+			li{
+				display: flex;
+				justify-content:space-between;
+				padding:3% 0;
+				border-bottom: 1px solid #ccc;
+				.left{
+					width: 10%;
+					padding-top: 15%;
+					text-align: center;
+					span{
+						display: block;
+						width: 20px;
+						height:20px;
+						background-image:url('../images/round.png');
+						background-size: 100% 100%;
+					}
+					.bgc{
+						background-image: url('../images/v.png');
+						background-size: 100% 100%;
+					}
+				}
+				.icon{
+					width: 30%;
+					border:1px solid #ccc;
+					img{
+						width: 100%;
+					}
+				}
+				.right{
+					width:55%;
+					p{
+						line-height: 1.5rem;
+					}
+					.names{
+						font-size: 14px;
+						
+					}
+					.price{
+						color:red;
+						font-weight:bold;
+						span{
+							float:right;
+							font-weight: 400;
+						}
+					}
+					.num{
+						.jian,.jia,.txt{
+							width: 20%;
+							height: 2rem;
+							text-align: center;
+							background: #fff;
+							box-sizing:border-box;
+							border:1px solid #ccc;
+						}
+						.removeBtn{
+							width: 25%;
+							height: 2rem;
+							line-height: 2rem;
+							background: #ea4529;
+							text-align: center;
+							border:1px solid #ea4529;
+
+						}
+						
+					}
+				}
+			}
+		}
+		.hide{
+			width: 100%;
+			text-align: center;
+			padding:10% 0;
+			p{
+				line-height: 2.5rem;
+				a{
+					color:blue;
+					font-size: 14px;
+				}
+			}
+			.p1{
+				font-size: 20px;
+				font-weight: bold;
+			}
+
+		}
+
+	}
+	.zong{
+		position: fixed;
+		background:#fff;
+		bottom:50px;
+		width:100%;
+		height: 45px;
+		padding-left:5%;	
+		border-top:1px solid #ccc;
+		border-bottom:1px solid #ccc;
+		display: flex;
+		justify-content:space-between;
+		box-sizing:border-box;
+		.leftp{
+			width: 9%;
+			line-height: 45px;
+			text-align: center;
+			span{
+				display: block;
+				width: 20px;
+				height: 20px;
+				background-image:url('../images/round.png');
+				background-size:100% 100%; 
+			}
+			.imgs{
+				background-image: url('../images/v.png');
+				background-size: 100% 100%;
+			}
+		}
+		.center{
+			width: 50%;
+			.total{
+				line-height: 1.5rem;
+				font-size: 18px;
+				span{
+					color:red;
+					font-weight: bold;
+				}
+				
+			}
+			.save{
+				font-size: 12px;
+				color:#ccc;
+			}
+		}
+		.btn{
+			width: 30%;
+			height:45px;
+			line-height: 45px;
+			background: #ea4529;
+			text-align: center;
+			color:#fff;
+		}
+
+	}
+}
